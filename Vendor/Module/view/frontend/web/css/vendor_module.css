@@ -17,3 +17,5 @@
     text-decoration: line-through;}
 
 #shopping-cart-table span.original_price{ text-decoration: line-through;}
+
+.minicart-items .product-item-details .details-qty {clear: left;}
