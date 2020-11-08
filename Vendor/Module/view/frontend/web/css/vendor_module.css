@@ -1,0 +1,19 @@
+#minicart-content-wrapper .discount.coupon{ display: none}
+
+#minicart-content-wrapper .totals.discount{display: inline-table;}
+
+#minicart-content-wrapper .totals.discount .amount{width: 55%;}
+
+#minicart-content-wrapper .totals.discount .amount .price{ float:right; font-size: 17px;
+    line-height: 15px;}
+
+#minicart-content-wrapper .minicart-items .product .amount .price{ float:right;}
+
+#minicart-content-wrapper .product .price-container  span.price-wrapper{float: left}
+
+#minicart-content-wrapper .price-container .original_price{line-height: 31px;
+    padding-left: 70px;
+    display: block;
+    text-decoration: line-through;}
+
+#shopping-cart-table span.original_price{ text-decoration: line-through;}

@@ -1,0 +1,25 @@
+<?php
+
+/** @var $block \Vendor\Module\Block\Item\Price\Renderer */
+
+$_item = $block->getItem();
+?>
+<span class="price-including-tax" data-label="<?= $block->escapeHtml(__('Excl. Tax')) ?>">
+    <span class="cart-price">
+        <?= $block->escapeHtml(
+            $this->helper(Magento\Checkout\Helper\Data::class)->formatPrice($_item->getCalculationPrice()),
+            ['span']
+        ) ?>
+    </span>
+</span>
+<?php if($block->getIsSpecialPrice($_item->getSku())): ?>
+    <span class="original_price">
+        <?= $block->escapeHtml(
+            $this->helper(Magento\Checkout\Helper\Data::class)->formatPrice( $block->getPriceBySku($_item->getSku())),
+            ['span']
+        ) ?>
+
+
+    </span>
+<?php endif; ?>
+
